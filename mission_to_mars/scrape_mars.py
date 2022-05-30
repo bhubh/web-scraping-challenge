@@ -35,8 +35,8 @@ def scrape():
         news.append(news_text)
         
         
-    mars_collection["News Heading"] = news_heading
-    mars_collection["News Text"] = news
+    mars_collection["News_Heading"] = news_heading
+    mars_collection["News_Text"] = news
     
     #Mars space Featured image
     
@@ -60,7 +60,7 @@ def scrape():
     href = link['href']
     full_link = url +'/'+ href
     
-    mars_collection["Featured Image"] = full_link
+    mars_collection["Featured_Image"] = full_link
     
     
     ##Mars facts
