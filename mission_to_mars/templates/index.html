@@ -13,20 +13,64 @@
   <div class="container">
 
     <div class="jumbotron text-center">
-      <h1>Mars Info'</h1>
+      <h1>Mars Info!</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Find Mars info!</a></p>
     </div>
 
-    <!-- Phone Listings -->
+    <!-- news Listings -->
     <div class="row" id="craiglist-listings">
       <div class="col-md-12">
-        <h4 class="heading">{{mars.News_Heading}} </h4>
-        <small>{{mars.News_Text}}</small>
+        <h4 class="heading">{{mars.News_Heading[0]}} </h4>
+        <small>{{mars.News_Text[0]}}</small>
 
 
 
       </div>
     </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+                
+         <img src="{{mars.Featured_Image}}">
+        
+        </div>
+        
+            <div class="col-lg-4">
+                <h3> Mars Facts</h3>
+                    
+             {{mars.Facts|safe}}
+            
+            </div>
+            
+           
+                
+       
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+                
+         <img src="{{mars.Hemispheres[0][image_url]}}">
+         <h3> {{mars.Hemispheres[0][title]}}</h3>
+        
+        </div>
+        
+            <div class="col-lg-6">
+               
+                    
+                <img src="{{mars.Hemispheres[1][image_url]}}">
+                <h3> {{mars.Hemispheres[1][title]}}</h3>
+            
+            </div>
+            
+           
+                
+       
+      </div>
+
+
+
+     
 
   </div>
 </body>

@@ -103,6 +103,7 @@ def scrape():
 
     
     mars_collection["Hemispheres"] = image_list
+    browser.quit()
     
     return mars_collection
     
