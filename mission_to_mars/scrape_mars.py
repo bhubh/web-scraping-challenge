@@ -93,7 +93,7 @@ def scrape():
         soup = BeautifulSoup(html, 'html.parser')
         result = soup.find('div', class_='downloads')
         image = result.find_all('li')
-        link = image[1]
+        link = image[0]
         a_tag = link.find('a')
         href = a_tag['href']
         full_url = url+href
